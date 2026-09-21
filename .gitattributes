@@ -1,0 +1,18 @@
+# 统一换行符，保证跨平台可用
+* text=auto eol=lf
+
+# Windows 批处理需要 CRLF
+*.bat text eol=crlf
+gradlew.bat text eol=crlf
+
+# Shell 脚本必须 LF，否则 Linux/macOS 下无法执行
+gradlew text eol=lf
+*.sh text eol=lf
+
+# 二进制文件不做换行转换
+*.jar binary
+*.apk binary
+*.png binary
+*.jpg binary
+*.jks binary
+*.keystore binary

@@ -1,0 +1,27 @@
+# ---- Gradle ----
+.gradle/
+build/
+app/build/
+
+# ---- Android Studio / IntelliJ ----
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---- 本地配置（含本机 SDK 路径，不应提交）----
+local.properties
+
+# ---- 签名文件 ----
+*.jks
+*.keystore
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 日志/临时 ----
+*.log
+*.tmp

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- 顶部：启用开关 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/enable_service"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/swEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 状态栏：当前正在播放的应用 -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/status_idle"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp" />
+
+    <!-- 说明 -->
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="为每个应用单独设置增益（最大 +15 dB），播放时自动生效"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp" />
+
+    <!-- 授权入口 -->
+    <Button
+        android:id="@+id/btnPerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="① 授权通知使用权（用于识别正在播放的应用）"
+        android:textSize="12sp"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="② 授权使用情况访问（备用识别方式）"
+        android:textSize="12sp"
+        android:textAllCaps="false" />
+
+    <!-- 搜索框 -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_hint"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <!-- 应用列表 -->
+    <ListView
+        android:id="@+id/lvApps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/divider"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="6dp" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- 扬声器本体 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M3,9v6h4l5,5V4L7,9H3z" />
+    <!-- 声波 1 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16.5,8.5c1.2,1.7 1.2,5.3 0,7M19,5.5c2.6,3.3 2.6,9.7 0,13"
+        android:strokeWidth="1.6"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:fillType="evenOdd" />
+</vector>

@@ -1,0 +1,37 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.rk.appvolume'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.rk.appvolume"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+// 零外部依赖：只用 Android 原生 API（Activity / ListView / SeekBar / AudioEffect）
+// 这样无需下载任何 AndroidX 库，构建最快也最稳。
+dependencies {
+}

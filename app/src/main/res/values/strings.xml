@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">应用音量放大器</string>
+    <string name="enable_service">启用放大服务</string>
+    <string name="status_idle">当前无应用播放音频</string>
+    <string name="search_hint">搜索应用…</string>
+    <string name="unit_none">未放大</string>
+    <string name="playing">正在播放</string>
+    <string name="toast_need_notification">请授予通知权限，否则服务无法常驻</string>
+    <string name="toast_started">服务已启动，播放音频时自动生效</string>
+    <string name="toast_stopped">服务已停止</string>
+</resources>
